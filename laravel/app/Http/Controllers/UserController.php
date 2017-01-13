@@ -16,7 +16,7 @@ class UserController extends Controller
 			'email' => 'required|email|unique:users',
 			'first_name' => 'required|max:120',
 			'last_name' => 'required|max:120',
-			'phone' => 'required|max:15',
+			'phone' => 'required|max:120',
 			'password' => 'required|min:4'
 		]);
 		$email = $request['email'];
