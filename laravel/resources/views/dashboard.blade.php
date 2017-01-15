@@ -7,9 +7,9 @@
             <header><h3>What do you have to say?</h3></header>
             <form action="{{route('post.create')}}" method="post">
                 <div class="form-group">
-                    <textarea class="form-control" name="body" id="new-post" rows="5" placeholder="Your Post"></textarea>
+                    <textarea class="form-control text-field-box2" name="body" id="new-post" rows="5" placeholder="Your Post"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Create Post</button>
+                <button type="submit" class="pink-button">Create Post</button>
                 <input type="hidden" value="{{Session::token()}}" name="_token">
             </form>
         </div>
@@ -48,13 +48,13 @@
             <form>
                 <div class="form-group">
                     <label for="post-body">Edit the Post</label>
-                    <textarea class="form-control" name="post-body" id="post-body" rows="5"></textarea>
+                    <textarea class="form-control text-field-box2" name="post-body" id="post-body" rows="5"></textarea>
                 </div>
             </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="modal-save">Save changes</button>
+            <button type="button" class="pink-button2" id="modal-save">Save changes</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
